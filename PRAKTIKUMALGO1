@@ -1,0 +1,15 @@
+# Meminta input dari user
+panjang = float(input("Masukkan panjang ruangan: "))
+lebar = float(input("Masukkan lebar ruangan: "))
+satuan = input("Masukkan satuan (meter/inci): ").lower()
+
+# Menghitung luas
+luas = panjang * lebar
+
+# Menampilkan hasil
+if satuan == "meter":
+    print(f"Luas ruangan adalah {luas} meter persegi.")
+elif satuan == "inci":
+    print(f"Luas ruangan adalah {luas} inci persegi.")
+else:
+    print("Satuan yang dimasukkan tidak valid.")
